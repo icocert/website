@@ -6,7 +6,9 @@ html {
 }
 
 body {
-  @include serif-font;
+  @include sans-serif-font;
+  font-size: 1.15rem;
+  font-weight: 300;
 }
 
 hr {
@@ -27,21 +29,12 @@ a {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include sans-serif-font;
-}
-
 .bg-primary {
   background-color: $primary !important;
 }
 
 .text-faded {
-  color: fade-out($white, .3);
+  color: fade-out($white, .1);
 }
 
 section {
