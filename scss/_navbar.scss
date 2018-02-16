@@ -18,8 +18,8 @@
     > li.nav-item {
        > a.nav-link,
       > a.nav-link:focus {
-        font-size: .9rem;
-        font-weight: 700;
+        font-size: 1rem;
+        font-weight: 600;
         text-transform: uppercase;
         color: $gray-900;
         &:hover {
@@ -39,7 +39,7 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: fade-out($white, .3);
+      color: fade-out($white, .2);
       &:focus,
       &:hover {
         color: $white;
@@ -50,7 +50,7 @@
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out($white, .3);
+      color: fade-out($white, .2);
       &:hover {
         color: $white;
       }
