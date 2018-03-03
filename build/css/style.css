@@ -70,8 +70,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  background-color: #556B7F;
+  background-color: #263039;
   font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -113,7 +112,15 @@ img::-moz-selection {
   background-color: transparent;
 }
 
-#mainNav .navbar-toggler-icon {
+#mainNav .navbar-toggler {
+  border: 0;
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: 0;
+}
+
+#mainNav .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
@@ -123,25 +130,24 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: #556B7F;
+    color: #263039;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: #263039;
+    color: #556B7F;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     padding: 0.5rem 1rem;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: #556B7F;
+    color: #263039;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #263039;
+    color: #556B7F;
   }
   #mainNav.navbar-shrink {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    background-color: #556B7F;
+    background-color: #263039;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #fff;
@@ -273,6 +279,10 @@ header.masthead p {
   color: #556B7F !important;
 }
 
+.text-secondary {
+  color: #AAD7FF !important;
+}
+
 .btn {
   font-weight: 700;
   text-transform: uppercase;
@@ -296,7 +306,7 @@ header.masthead p {
 }
 
 .btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(77, 100, 123, 0.5) !important;
 }
 
 #particles-js {
@@ -317,6 +327,18 @@ header.masthead p {
 
 .bg-dark {
   background-color: #263039 !important;
+}
+
+.bg-dark a {
+  color: #AAD7FF;
+}
+
+.bg-dark a:hover {
+  color: #a9d7ff;
+}
+
+.bg-dark hr {
+  border-color: #AAD7FF;
 }
 
 .section-pd {

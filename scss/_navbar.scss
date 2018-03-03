@@ -1,7 +1,6 @@
 // Styling for the navbar
 #mainNav {
-  border-bottom: 1px solid fade-out($white, .5);
-  background-color: $primary;
+  background-color: $bgblue;
   @include sans-serif-font;
   @include transition-all;
   .navbar-brand {
@@ -49,10 +48,10 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: $primary;
+      color: $bgblue;
       &:focus,
       &:hover {
-        color: $bgblue;
+        color: $primary;
       }
     }
     .navbar-nav > li.nav-item > a.nav-link {
@@ -60,14 +59,13 @@
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: $primary;
+      color: $bgblue;
       &:hover {
-        color: $bgblue;
+        color: $primary;
       }
     }
     &.navbar-shrink {
-      border-bottom: 1px solid fade-out($white, .5);
-      background-color: $primary;
+      background-color: $bgblue;
       .navbar-brand {
         color: $white;
         &:focus,

@@ -70,8 +70,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  background-color: #556B7F;
+  background-color: #263039;
   font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -131,25 +130,24 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: #556B7F;
+    color: #263039;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: #263039;
+    color: #556B7F;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     padding: 0.5rem 1rem;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: #556B7F;
+    color: #263039;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #263039;
+    color: #556B7F;
   }
   #mainNav.navbar-shrink {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    background-color: #556B7F;
+    background-color: #263039;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #fff;
