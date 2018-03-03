@@ -1,9 +1,11 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  particlesJS.load('particles-js', 'js/particles.json');
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
@@ -28,10 +30,11 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
+    var $mainNav = $("#mainNav");
+    if ($mainNav.offset().top > 100) {
+      $mainNav.addClass("navbar-shrink");
     } else {
-      $("#mainNav").removeClass("navbar-shrink");
+      $mainNav.removeClass("navbar-shrink");
     }
   };
   // Collapse now if page is not at top
@@ -71,7 +74,5 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
-
-  particlesJS.load('particles-js', 'js/particles.json');
 
 })(jQuery); // End of use strict

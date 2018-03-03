@@ -22,11 +22,27 @@
 
 .bg-dark {
   background-color: $bgblue !important;
+  a {
+    color: $secondary;
+    &:hover {
+      color: darken($secondary, .1);
+    }
+  }
+  hr {
+    border-color: $secondary;
+  }
 }
 
 .section-pd {
   padding: 4rem 0;
   @media (min-width: 992px) {
     padding: 5rem 0;
+  }
+}
+
+.text-blue {
+  color: $bgblue;
+  .faded {
+    color: fade-out($bgblue, .1);
   }
 }
