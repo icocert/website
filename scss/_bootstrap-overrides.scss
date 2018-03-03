@@ -3,6 +3,11 @@
   color: $primary !important;
 }
 
+.text-secondary {
+  color: $secondary !important;
+}
+
+
 .btn {
   font-weight: 700;
   text-transform: uppercase;
@@ -22,10 +27,10 @@
   &:focus,
   &:active {
     color: $white;
-    background-color: darken($primary, 5%) !important;
+    background-color: lighten($primary, 5%) !important;
   }
   &:active,
   &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba(77, 100, 123,.5) !important;
   }
 }

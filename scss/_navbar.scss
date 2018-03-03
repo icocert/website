@@ -1,17 +1,17 @@
 // Styling for the navbar
 #mainNav {
-  border-bottom: 1px solid fade-out($gray-900, .9);
-  background-color: $white;
+  border-bottom: 1px solid fade-out($white, .5);
+  background-color: $primary;
   @include sans-serif-font;
   @include transition-all;
   .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: $primary;
+    color: $white;
     @include sans-serif-font;
     &:focus,
     &:hover {
-      color: darken($primary, .1);
+      color: $secondary;
     }
   }
   .navbar-nav {
@@ -21,12 +21,12 @@
         font-size: 1rem;
         font-weight: 600;
         text-transform: uppercase;
-        color: $gray-900;
+        color: $white;
         &:hover {
-          color: $primary;
+          color: $secondary;
         }
         &.active {
-          color: $primary !important;
+          color: $secondary !important;
           background-color: transparent;
           &:hover {
             background-color: transparent;
@@ -35,14 +35,24 @@
       }
     }
   }
+  .navbar-toggler{
+    border: 0;
+    &:focus {
+      outline: 0;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+
   @media (min-width: 992px) {
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: fade-out($white, .2);
+      color: $primary;
       &:focus,
       &:hover {
-        color: $white;
+        color: $bgblue;
       }
     }
     .navbar-nav > li.nav-item > a.nav-link {
@@ -50,26 +60,26 @@
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out($white, .2);
+      color: $primary;
       &:hover {
-        color: $white;
+        color: $bgblue;
       }
     }
     &.navbar-shrink {
-      border-bottom: 1px solid fade-out($gray-900, .9);
-      background-color: $white;
+      border-bottom: 1px solid fade-out($white, .5);
+      background-color: $primary;
       .navbar-brand {
-        color: $primary;
+        color: $white;
         &:focus,
         &:hover {
-          color: darken($primary, .1);
+          color: $secondary;
         }
       }
       .navbar-nav > li.nav-item > a.nav-link,
       .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: $gray-900;
+        color: $white;
         &:hover {
-          color: $primary;
+          color: $secondary;
         }
       }
     }
