@@ -78,7 +78,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
@@ -91,7 +91,7 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
 }
@@ -357,4 +357,8 @@ header.masthead p {
 
 .text-blue .faded {
   color: rgba(38, 48, 57, 0.9);
+}
+
+h2, h3 {
+  font-weight: 400;
 }
