@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.15rem;
   font-weight: 300;
 }
@@ -71,17 +71,17 @@ img::-moz-selection {
 
 #mainNav {
   background-color: #263039;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 #mainNav .navbar-brand {
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -91,7 +91,7 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
 }
@@ -245,7 +245,7 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -288,7 +288,7 @@ header.masthead p {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .btn-xl {
@@ -357,4 +357,8 @@ header.masthead p {
 
 .text-blue .faded {
   color: rgba(38, 48, 57, 0.9);
+}
+
+h2, h3 {
+  font-weight: 400;
 }
